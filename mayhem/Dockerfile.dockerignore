@@ -1,0 +1,8 @@
+# Keep the full repo (incl. .git, which the grader uses); drop only local build artifacts and cruft.
+*.o
+*.a
+*.so
+**/__pycache__/
+.DS_Store
+*.swp
+*~

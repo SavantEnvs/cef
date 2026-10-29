@@ -1,0 +1,23 @@
+octal "00000644" -> 420
+octal "00000000017 " -> 15
+octal "0000644" -> invalid
+octal "77777777777" -> 8589934591
+octal "89" -> invalid
+ustar: Success
+ustar: pkg/hello.txt size=20 mtime=1700000000 content=[hello cef installer
+]
+ustar: pkg/docs/readme.txt size=24 mtime=1700000000 content=[second file: 0123456789
+]
+handmade ok.txt: Success ok.txt=[data]
+handmade ../evil: Invalid tar header (checksum mismatch) ok.txt=[]
+handmade /etc/evil: Invalid tar header (checksum mismatch) ok.txt=[]
+handmade a/../../evil: Invalid tar header (checksum mismatch) ok.txt=[]
+badchecksum: Invalid tar header (checksum mismatch)
+xz-crc64: blocks=1 total=10240 check=4
+xz-crc64: block off=12 csize=220 usize=10240 ok=1 fnv=75af9c635dc1fb81
+xz-crc32: blocks=1 total=10240 check=1
+xz-crc32: block off=12 csize=216 usize=10240 ok=1 fnv=75af9c635dc1fb81
+xz-block64k: blocks=1 total=65536 check=4
+xz-block64k: block off=12 csize=132 usize=65536 ok=1 fnv=0105db62f9f6fa39
+tar.xz: Success hello=[hello cef installer
+]

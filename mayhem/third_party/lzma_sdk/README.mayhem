@@ -1,0 +1,4 @@
+LZMA SDK 26.03 (7-Zip C sources) from https://github.com/ip7z/7zip/releases/download/26.03/7z2603-src.tar.xz
+sha256 9cbde5099c6deb73691b0579063da5827522ccbbcba3f0020fd04e8c8c16c0d4
+Subset of C/: the sources the installer XZ/CRC code links against (single-threaded).
+Chromium patches applied (third_party/lzma_sdk/patches 0002 CpuArch.h UBSan casts, 0003 suppress CRC hw accel, 0006 LzFind), matching the lzma_sdk CEF builds against (chromium 156.0.8078.0).
