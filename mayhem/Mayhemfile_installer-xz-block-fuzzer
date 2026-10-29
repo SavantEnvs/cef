@@ -1,0 +1,9 @@
+project: savantenvs/cef
+target: installer-xz-block-fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/installer-xz-block-fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/installer_xz_block_fuzzer
+    libfuzzer: true
+    timeout: 5

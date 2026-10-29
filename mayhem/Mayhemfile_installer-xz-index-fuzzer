@@ -1,0 +1,9 @@
+project: savantenvs/cef
+target: installer-xz-index-fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/installer-xz-index-fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/installer_xz_index_fuzzer
+    libfuzzer: true
+    timeout: 5

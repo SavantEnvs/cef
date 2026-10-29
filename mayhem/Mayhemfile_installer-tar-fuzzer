@@ -1,0 +1,9 @@
+project: savantenvs/cef
+target: installer-tar-fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/installer-tar-fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/installer_tar_fuzzer
+    libfuzzer: true
+    timeout: 5
